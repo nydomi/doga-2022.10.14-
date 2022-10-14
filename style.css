@@ -1,0 +1,19 @@
+body{
+    background-color: #F2CC8F;
+}
+#main{
+    padding: 10px;
+    background-color: #81B29A;
+    width: 500px;
+    height: 1000px;
+    border-radius: 10px;   
+}
+
+#player img{
+    width: 120px;
+    height: 100px;
+}
+#cpuPlayer img{
+    width: 120px;
+    height: 100px;
+}
