@@ -5,6 +5,7 @@ body{
 }
 #main{
 
+    border: solid #3D405B 1px;
     display: inline-block;
     margin: auto;
     padding: 10px;
