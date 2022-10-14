@@ -3,6 +3,9 @@ let random=1;
 let cpuMove;
 let playerMove;
 
+let pointCPU = 0 ;
+let pointPlayer = 0;
+
 function rounds(){
     kor = document.getElementById('roundCount').value;
 
@@ -16,7 +19,6 @@ let kepek = ['ko.jpg', 'papir.jpg', 'ollo.jpg'];
 function dontess(){
     
     random = Math.floor(Math.random()*3)+1;
-    document.getElementById('eredmeny').innerHTML=random;
     switch(random){
         case 1:
             document.getElementById('cpuImg').src=kepek[0];
@@ -42,9 +44,9 @@ function dontess(){
                 3 - 1 / 2
 */ 
 
-function igen(szam){
+function igen(szam){ //ami
     console.log("--------------------");
-    dontess()
+    dontess();
     console.log(szam);
     switch(parseInt(szam)){
         case 1:
@@ -63,19 +65,30 @@ function igen(szam){
 
     if(playerMove == "ko" && cpuMove=="ollo"){
         console.log('Játékos nyert!');
+        document.getElementById('nyertes').innerHTML="Játékos!";
+        pointPlayer++;
     }
     else if(playerMove=="papir" && cpuMove=="ko"){
         console.log('Játékos nyert!');
+        document.getElementById('nyertes').innerHTML="Játékos!";
+        pointPlayer++;
     }
     else if(playerMove=="ollo" && cpuMove=="papir"){
         console.log('Játékos nyert!');
+        document.getElementById('nyertes').innerHTML="Játékos!";
+        pointPlayer++;
     }
     else if(parseInt(random)==parseInt(szam)){
         console.log("Döntetlen!");
+        document.getElementById('nyertes').innerHTML="Döntetlen!";
     }
     else{
         console.log("CPU nyert!");
+        document.getElementById('nyertes').innerHTML="CPU!";
+        pointCPU++;
     }
+    document.getElementById('pPoint').innerHTML=pointPlayer;
+    document.getElementById('cPoint').innerHTML=pointCPU;
 }
 
 

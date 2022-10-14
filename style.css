@@ -2,12 +2,15 @@ body{
     background-color: #F2CC8F;
 }
 #main{
+    position: absolute;
+    left: 35%;
+    top: 20%;
     padding: 10px;
     background-color: #81B29A;
     width: 500px;
-    height: 1000px;
-    border-radius: 10px;   
+    border-radius: 10px; 
 }
+
 
 #player img{
     width: 120px;
