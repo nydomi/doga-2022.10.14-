@@ -1,10 +1,12 @@
 body{
     background-color: #F2CC8F;
+    display: flex;
+
 }
 #main{
-    position: absolute;
-    left: 35%;
-    top: 20%;
+
+    display: inline-block;
+    margin: auto;
     padding: 10px;
     background-color: #81B29A;
     width: 500px;
